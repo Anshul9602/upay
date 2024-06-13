@@ -1,0 +1,53 @@
+
+	<style>
+		.mobile_menu .col-12 hr {
+			margin: 7px 0;
+		}
+		.mobile-navigation {
+			max-height: 500px;
+		}
+		.mobile_menu .col-12 a {
+			text-transform: uppercase;
+			color: #333;
+			font-size: 12px;
+		}
+		.collapse-span {
+			display: none;
+		}
+	</style>
+	<div class="row mobile_menu">
+		<br/>
+		<br/>
+		<div class="col-12" style='margin-top:10px'>
+			<a href="index.php?route=common/about">About</a>
+			<hr/>
+		</div>
+		<div class="col-12" style='margin-top:10px'>
+			<a href="index.php?route=common/about">Solution</a>
+			<a href="index.php?route=common/about">Upaaye Science</a>
+			<hr/>
+		</div>
+		<div class="col-12" style='margin-top:10px'>
+			
+			<a href="index.php?route=common/about">Upaaye Science</a>
+			<hr/>
+		</div>
+		<div class="col-12" style='margin-top:10px'>
+			
+			<a href="index.php?route=common/about">Plan</a>
+			<hr/>
+		</div>
+		<div class="col-12" style='margin-top:10px'>
+			
+			<a href="index.php?route=common/about">More</a>
+			<hr/>
+		</div>
+	
+			<script>
+				$(document).ready(function () {
+$(".collapse-toggle").click(function (e) {
+e.preventDefault();
+$(".collapse-span").slideToggle();
+})
+})
+			</script>

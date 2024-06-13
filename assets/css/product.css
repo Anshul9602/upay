@@ -1,0 +1,174 @@
+.help-block{
+    display:none !important;
+  }
+  .slick-slide img{
+    margin:auto;
+  }
+  .tabs-ul li{
+    width:120px;
+    text-align:center;
+  }
+  .tabs-ul li a.active{
+    border-bottom:2px solid #FBC815;
+    width:100%;
+   
+  }
+  .tabs-ul li a{
+    color:#333;
+    font-size:14px;
+    padding-bottom:4px;
+    display:block;
+    border-bottom:2px solid transparent;
+  }
+  .tab-content{
+    margin-top:20px;
+  }
+
+  .tab_options {
+    border: thin solid #ccc;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 11.5px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+  @media screen and (max-width:650px) {
+    .btn-round.slick-arrow{
+      display:none !important;
+    }
+    .tabs-ul li {
+      width:62px;
+    }
+    .tabs-ul li a {
+    font-size: 10px;
+    }
+  }
+  .addi li img{
+    max-width:130px;
+    border:2px solid transparent;
+    border-radius:4px;
+    width:100%;
+  }
+  .addi .slick-slide.slick-current.slick-active{
+    border:2px solid #FCCF32;
+    border-radius:4px;
+  }
+  .addi {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+
+/****radio css***/
+ .radio-custom label {
+  display: inline-block;
+  margin-left:4px;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  float:left;
+  margin-top:-9.5px;
+}
+.radio-custom label input {
+  position: absolute;
+  left: -9999px;
+}
+.radio-custom label input:checked + span {
+  background-color: #d6d6e5;
+  border:thin solid #333;
+}
+
+.radio-custom label span {
+  display: flex;
+  align-items: center;
+  padding: 7.5px 18px;
+  border-radius: 99em;
+  transition: 0.25s ease;
+  background-color: #d6d6e5;
+}
+
+.btn-primary{
+  max-width:280px;
+}
+
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+   width: 100px; 
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  /* width: 20%; remove this */
+  z-index: 1;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  /* width: 20%; remove this */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+::after,
+::before {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.star-rating.star-5 {width: 100px;}
+.star-rating.star-5 input,
+.star-rating.star-5 i {width: 20%;}
+.star-rating.star-5 i ~ i {width: 40%;}
+.star-rating.star-5 i ~ i ~ i {width: 60%;}
+.star-rating.star-5 i ~ i ~ i ~ i {width: 80%;}
+.star-rating.star-5 i ~ i ~ i ~ i ~i {width: 100%;}
+
+.star-rating.star-3 {width: 150px;}
+.star-rating.star-3 input,
+.star-rating.star-3 i {width: 33.33%;}
+.star-rating.star-3 i ~ i {width: 66.66%;}
+.star-rating.star-3 i ~ i ~ i {width: 100%;}

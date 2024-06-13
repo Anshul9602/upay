@@ -1,0 +1,78 @@
+{{ header }}
+<style>
+  .address-card{
+    border:2px solid #f1f1f1;
+    padding:5px;
+    max-width:300px;
+    margin:auto;
+    text-transform:capitalize;
+  }
+  .address-card a{
+    float:left;
+  }
+</style>
+<!-- breadcrumb area start -->
+<div style="background:#f1f1f1; border-bottom:thin solid #fff" class="breadcrumb-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumb-wrap">
+          <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php?route=common/home"><i class="fa fa-home"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+              <a href="index.php?route=account/account">
+                account
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breadcrumb area end -->
+<div id="account-address" class="container">
+ 
+
+  <div class="row">
+   
+    <div style="min-height:600px" id="content" class="col-sm-12 text-center">{{ content_top }}
+    <br /><br /> 
+    <h2>{{ text_address_book }}</h2>
+    <br /> 
+    
+      {% if addresses %}
+      <div class="row">
+     {% for result in addresses %}
+      <div class="col-sm-4">
+        <div class="address-card">
+        {{ result.address }}
+       
+      </div>
+      <a href="{{ result.update }}" class="btn btn-hero">{{ button_edit }}</a>
+       <a style="margin-top:35px" href = "{{ result.delete }}" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger" onclick="return confirm('{{ text_confirm }}')">{{ button_delete }}</a></td>
+     
+      </div>
+     {% endfor %}
+    </div>
+
+      {% else %}
+      <p>{{ text_empty }}</p>
+      {% endif %}
+      <br /><br />
+      <div class="row">
+        <div class="col-sm-12 text-center">
+        <div class="buttons">
+<a href="{{ add }}" class="btn btn-primary">{{ button_new_address }}</a>
+      </div><br><br>
+        </div>
+      </div>
+
+ 
+      {{ content_bottom }}</div>
+    </div>
+</div>
+{{ footer }}
