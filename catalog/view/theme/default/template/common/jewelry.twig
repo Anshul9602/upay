@@ -242,45 +242,7 @@
       <div class="card-sale mt-50">
          <div class="row">
             <div class="col-md-10 d-flex justify-content-center" style="    align-items: center;">
-               <div class="swiper topSwiper5">
-                  <div class="swiper-wrapper">
-                     {% if products %}
-                     {% for product in products %}
-                     <div class="swiper-slide">
-                        <div class="product-card text-center">
-                           <div class="image">
-                              <a onclick="" href="{{ product.href }}">
-                                 <img onclick="" style="z-index: 99999999;width:176px;" src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive pthumb" />
-                              </a>
-                           </div>
-                           <a onclick="" href="{{ product.href }}">
-                              <p class="product_name" style="color:  rgba(0, 59, 49, 1);">
-                                 {{ product.name }}
-                              </p>
-                           </a>
-                           {% if product.price %}
-                           <p class="price  mt-10 mb-10" style="color:  rgba(0, 59, 49, 1);">
-                              {% if not product.special %}
-                              {{ product.price }}
-                              {% else %}
-                              <span style="white-space: nowrap" class="price-new">
-                                 {{ product.special }}
-                              </span>
-                              <span style="text-decoration:none; color: #1677BC;display:none;">{{ product.percent }}% OFF</span>
-                              </span>
-                              <span style="white-space: nowrap;color: rgba(0, 59, 49, 1);" class="price-old">
-                                 {{ product.price }}
-                              </span>
-                              {% endif %}
-                           </p>
-                           {% endif %}
-                           <button class="btn btn-primary" onclick="cart.add('{{ product.product_id }}');">View Product</button>
-                        </div>
-                     </div>
-                     {% endfor %}
-                     {% endif %}
-                  </div>
-               </div>
+             
             </div>
             <div class="col-md-2 hide-phone">
             <a href="index.php?route=product/category&path=94">
