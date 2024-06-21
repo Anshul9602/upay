@@ -30,3 +30,14 @@ define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
 
+
+
+// define('DB_DRIVER', 'mysqli');
+// define('DB_HOSTNAME', 'localhost');
+// define('DB_USERNAME', 'main_web');
+// define('DB_PASSWORD', 'Main_web@123');
+// define('DB_DATABASE', 'webuser_soli');
+// define('DB_PORT', '3306');
+// define('DB_PREFIX', 'oc_');
+
+
