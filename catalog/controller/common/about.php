@@ -10,7 +10,38 @@ class ControllerCommonAbout extends Controller
 		if (isset($this->request->get['route'])) {
 			$this->document->addLink($this->config->get('config_url'), 'canonical');
 		}
-	
+	//banner-top
+	$this->load->model('design/banner');
+	$this->load->model('tool/image');
+
+	$data['banners'] = array();
+
+	$results = $this->model_design_banner->getBanner(19);
+
+	foreach ($results as $result) {
+		if (is_file(DIR_IMAGE . $result['image'])) {
+			$data['banners'][] = array(
+				'title' => $result['title'],
+				'link'  => $result['link'],
+				'image' => $this->model_tool_image->resize($result['image'], '1689', '584')
+			);
+		}
+	}
+
+	$data['mob_banners'] = array();
+
+	$results = $this->model_design_banner->getBanner(19);
+
+	foreach ($results as $result) {
+		if (is_file(DIR_IMAGE . $result['image'])) {
+			$data['mob_banners'][] = array(
+				'title' => $result['title'],
+				'link'  => $result['link'],
+				'image' => $this->model_tool_image->resize($result['image'], '1140', '628')
+			);
+		}
+	}
+
 
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['column_right'] = $this->load->controller('common/column_right');

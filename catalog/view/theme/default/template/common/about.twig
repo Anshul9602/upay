@@ -1,49 +1,68 @@
 {{ header }}
 <div class="row">
-    <div class="col-sm-12">
-        <img src="assets/img/banner/about1.png" alt="" class="img-responsive w-100">
-    </div>
+	<div class="slider_banner col-12 desktop-banner">
+		<div class="desktop-slider hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
+			{% for banner in banners %}
+				<a href="{{ banner.link }}" style="position: relative;">
+					<img src="{{ banner.image }}" alt class="img-response slider-img">
+					
+				</a>
+			{% endfor %}
+
+		</div>
+	</div>
+	<div class="slider_banner col-12 mobile-banner">
+		<div class=" hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
+			{% for banner in mob_banners %}
+				<a href="{{ banner.link }}">
+					<img src="{{ banner.image }}" alt class="img-response slider-img">
+				</a>
+			{% endfor %}
+		</div>
+	</div>
 </div>
 <section class="container">
-    <div class="row d-flex align-items-center ">
-        <div class="col-md-4 mt-md-0 mt-3">
-            <img src="image/ab1.png" alt="" width="100%">
-        </div>
-        <div class="col-md-8 abb mt-md-0 mt-4 p-4">
-            <h1 style="color: #05182A; font-weight:700;font-size:35px;">Our Story</h1>
-            <br>
-            <p style="font-size: 22px;line-height:1.4;">Born in Delhi, with branches reaching across the globe, Upaaye Consulting began
-                with a simple idea: <span style="color: #906CD4; font-weight:700;">everyone deserves to feel confident
-                    about their
-                    financial decisions. </span></p>
-            
+	<div class="row d-flex align-items-center ">
+		<div class="col-md-4 mt-md-0 mt-3">
+			<img src="image/ab1.png" alt="" width="100%">
+		</div>
+		<div class="col-md-8 abb mt-md-0 mt-4 p-4">
+			<h1 style="color: #05182A; font-weight:700;font-size:35px;">Our Story</h1>
+			<br>
+			<p style="font-size: 22px;line-height:1.4;">Born in Delhi, with branches reaching across the globe, Upaaye Consulting began
+				                with a simple idea:
+				<span style="color: #906CD4; font-weight:700;">everyone deserves to feel confident
+					                    about their
+					                    financial decisions.
+				</span>
+			</p>
 
-            <p class="pt-md-4 pt-4 " style="font-size: 22px;">
 
-                We’ve grown our family from local roots to a broad canopy that shelters a diverse clientele, from
-                bustling startups to serene retirements.</p>
+			<p class="pt-md-4 pt-4 " style="font-size: 22px;">
 
-        </div>
-    </div>
+				We’ve grown our family from local roots to a broad canopy that shelters a diverse clientele, from
+				                bustling startups to serene retirements.</p>
+
+		</div>
+	</div>
 </section>
 <section class="container">
-    <div class="row d-flex align-items-center ">
-        <div class="col-md-12">
-            <img src="image/ab2.png" alt="" width="100%">
-        </div>
-    </div>
+	<div class="row d-flex align-items-center ">
+		<div class="col-md-12">
+			<img src="image/ab2.png" alt="" width="100%">
+		</div>
+	</div>
 </section>
 <section class="container">
-    <div class="row d-flex align-items-center ">
-        <div class="col-md-12">
-            <img src="image/ab3.png" alt="" width="100%">
-        </div>
+	<div class="row d-flex align-items-center ">
+		<div class="col-md-12">
+			<img src="image/ab3.png" alt="" width="100%">
+		</div>
 
-    </div>
+	</div>
 </section>
 
-    <img src="image/ab4.png" alt="" width="100%">
-
+<img src="image/ab4.png" alt="" width="100%">
 
 
 {{ footer }}

@@ -38,7 +38,7 @@ class ControllerCommonSolution extends Controller
 			$data['banners'][] = array(
 				'title' => $result['title'],
 				'link'  => $result['link'],
-				'image' => $this->model_tool_image->resize($result['image'], '1920', '720')
+				'image' => $this->model_tool_image->resize($result['image'], '1140', '628')
 			);
 		}
 	}

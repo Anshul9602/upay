@@ -16,14 +16,14 @@ class ControllerCommonUpaays extends Controller
 
 	$data['banners'] = array();
 
-	$results = $this->model_design_banner->getBanner(18);
+	$results = $this->model_design_banner->getBanner(20);
 
 	foreach ($results as $result) {
 		if (is_file(DIR_IMAGE . $result['image'])) {
 			$data['banners'][] = array(
 				'title' => $result['title'],
 				'link'  => $result['link'],
-				'image' => $this->model_tool_image->resize($result['image'], '1920', '720')
+				'image' => $this->model_tool_image->resize($result['image'], '1920', 'auto')
 			);
 		}
 	}
@@ -31,7 +31,7 @@ class ControllerCommonUpaays extends Controller
 
 	$data['banners'] = array();
 
-	$results = $this->model_design_banner->getBanner(18);
+	$results = $this->model_design_banner->getBanner(20);
 
 	foreach ($results as $result) {
 		if (is_file(DIR_IMAGE . $result['image'])) {

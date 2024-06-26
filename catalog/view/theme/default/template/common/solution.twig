@@ -13,7 +13,7 @@
    }
 
    .tab-button {
-      padding: 30px;
+      padding: 20px;
       cursor: pointer;
       background: #fff;
       border: none;
@@ -34,7 +34,7 @@
    .tab-content {
       border: 1px solid #ccc;
       border-top: none;
-      padding: 20px;
+      padding: 0 20px;
       background: #fff;
    }
 
@@ -47,14 +47,14 @@
    }
 
    .accordion {
-      margin: 20px auto;
+      margin: 0px auto;
       overflow: hidden;
    }
 
    .accordion-item {
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 7px 11px 0 rgba(0, 0, 0, 0.19);
-      margin-top: 30px;
-      padding: 30px;
+      margin-top: 20px;
+      padding: 20px;
       border: 1px solid #ccc;
       border-radius: 10px;
    }
@@ -71,7 +71,7 @@
       transition: background 0.3s;
    }
 
-   .accordion-header h3 {
+   .accordion-header h4 {
       letter-spacing: normal;
       text-transform: uppercase;
    }
@@ -94,18 +94,21 @@
    }
 
    .accordion-content {
+      font-size: 16px;
       display: none;
       padding: 0 15px 15px;
       background: #fff;
    }
-   @media (max-width: 768px) {
-   
-   .cus_ff{
-   font-size: 22px !important;
-   }
-   .cus_p{
-   max-width: 90% !important;
-   }
+
+   @media(max-width: 768px) {
+
+      .cus_ff {
+         font-size: 22px !important;
+      }
+
+      .cus_p {
+         max-width: 90% !important;
+      }
    }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -145,276 +148,297 @@
       <div class="tabs row">
          <div class="tab-buttons col-md-2 row">
             <button class="col-12 tab-button active" data-tab="tab1">
-               <img src="image/wm.png" alt="img" width="51">
+               <img src="image/wm.png" alt="img" width="30">
                <p class="mt-3" style="color:#212124;">Wealth Management</p>
             </button>
-            <button class="col-12 tab-button" data-tab="tab2"><img src="image/tp.png" alt="img" width="51">
+            <button class="col-12 tab-button" data-tab="tab2">
+               <img src="image/tp.png" alt="img" width="30">
                <p class="mt-3" style="color:#212124;">Retirement
                   Planning</p>
             </button>
             <button class="col-12 tab-button" data-tab="tab3">
-               <img src="image/tp.png" alt="img" width="51">
+               <img src="image/tp.png" alt="img" width="30">
                <p class="mt-3" style="color:#212124;">Tax Planning and
                   Preparation</p>
             </button>
             <button class="col-12 tab-button" data-tab="tab4">
-               <img src="image/ep.png" alt="img" width="51">
+               <img src="image/ep.png" alt="img" width="30">
                <p class="mt-3" style="color:#212124;">Estate Planning</p>
             </button>
             <button class="col-12 tab-button" data-tab="tab5">
-               <img src="image/ip.png" alt="img" width="51">
-               <p class="mt-3" style="color:#212124;"> Insurance Planning</p>
+               <img src="image/ip.png" alt="img" width="30">
+               <p class="mt-3" style="color:#212124;">
+                  Insurance Planning</p>
             </button>
          </div>
          <div class="tab-content col-md-10">
             <div class="tab-pane active" id="tab1">
                <div class="row ">
                   <div class="col-md-7">
-                     <h3 class="mt-4" style="color:#000;">Wealth Management</h3>
+                     <h3 class="mt-0" style="color:#000;">Wealth Management</h3>
                      <div class="row mt-4">
-                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
                         <div class="col-md-11 col-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Retirement
-                                 Savings Plans: </span> Want to retire without
-                              financial stress? We help you build a nest egg
-                              that will let you enjoy your golden years.</p>
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Investment Management:
+                              </span>Want your money to grow while you sleep? We recommend
+                              investment strategies tailored to maximize your returns and align with your financial
+                              goals.
+                              Call us, and let's make your money work as hard as you do.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
                         <div class="col-md-11 col-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;"> Pension
-                                 Planning:
-                              </span> Navigating pension options can be tricky.
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">
+                                 Savings Plans:
+                              </span>Planning for the future? We help you create savings plans that fit your lifestyle
+                              and ensure you’re prepared for whatever comes next.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Portfolio Management:
+                              </span>
+                              : We make sure your investments are as diverse and resilient as you
+                              are. Our expert team balances your portfolio to match your risk tolerance and future
+                              aspirations.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5 mt-md-0 mt-3" style=" align-items: end; display: flex;">
+                     <img src="image/sos11.png" alt width="100%">
+                  </div>
+                  <div class="col-md-12 mt-3">
+                     <img src="image/sos12.png" alt width="100%">
+                  </div>
+
+               </div>
+            </div>
+            <div class="tab-pane " id="tab2">
+               <div class="row ">
+                  <div class="col-md-7">
+                     <h3 class="mt-0" style="color:#000;">Retirement Planning</h3>
+                     <div class="row mt-4">
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Retirement Savings Plans:
+                              </span>
+                              Want to retire without financial stress? We help you build a nest
+                              egg that will let you enjoy your golden years.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">
+                                 Pension Planning:
+                              </span>
+                              Navigating pension options can be tricky.
                               We guide you through the best choices to
-                              ensure a steady income stream in retirement.</p>
+                              ensure a steady income stream in retirement.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
                         <div class="col-md-11 col-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Post-Retirement
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Post-Retirement
                                  Income
-                                 Planning: </span> Stay financially secure even
+                                 Planning:
+                              </span>
+                              Stay financially secure even
                               after you stop working. We design plans
                               that keep the money flowing long after
-                              retirement.</p>
+                              retirement.
+                           </p>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-5 mt-md-0 mt-3">
                      <img src="image/serv1.png" alt width="100%">
                   </div>
-                  <div class="col-md-7 mt-3">
+                  <div class="col-md-12 mt-3">
                      <img src="image/serv2.png" alt width="100%">
                   </div>
-                  <div class="col-md-5 mt-3">
-                     <img src="image/serv3.png" alt width="100%">
-                  </div>
+
                </div>
             </div>
-            <div class="tab-pane" id="tab2">
+            <div class="tab-pane " id="tab3">
                <div class="row ">
                   <div class="col-md-7">
-                     <h3 class="mt-4" style="color:#000;">A passion for putting
-                        you first.</h3>
+                     <h3 class="mt-0" style="color:#000;">Tax Planning and Preparation</h3>
                      <div class="row mt-4">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Retirement
-                                 Savings Plans: </span> Want to retire without
-                              financial stress? We help you build a nest egg
-                              that will let you enjoy your golden years.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Income Tax Planning:
+                              </span>
+                              Think of us as your tax champions. We wrestle those baffling
+                              regulations into submission so you can keep more of your hard-earned money.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1 pr-0 text-center  justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;"> Pension
-                                 Planning:
-                              </span> Navigating pension options can be tricky.
-                              We guide you through the best choices to
-                              ensure a steady income stream in retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">
+                                 Tax Filing Assistance:
+                              </span>
+                              Tax time doesn’t have to be stressful. We handle the paperwork and
+                              filing so you don’t have to.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1 pr-0 text-center  justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Post-Retirement
-                                 Income
-                                 Planning: </span> Stay financially secure even
-                              after you stop working. We design plans
-                              that keep the money flowing long after
-                              retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Tax Advisory Services:
+                              </span>
+                              Stay compliant and optimize your tax savings with ongoing advice
+                              from our tax experts.
+                           </p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-5">
-                     <img src="image/serv1.png" alt width="100%">
+                  <div class="col-md-5 mt-md-0 mt-3">
+                     <img src="image/sos21.png" alt width="100%">
                   </div>
-                  <div class="col-md-7 mt-3">
-                     <img src="image/serv2.png" alt width="100%">
+                  <div class="col-md-12 mt-3">
+                     <img src="image/sos22.png" alt width="100%">
                   </div>
-                  <div class="col-md-5 mt-3">
-                     <img src="image/serv3.png" alt width="100%">
-                  </div>
+
                </div>
             </div>
-            <div class="tab-pane" id="tab3">
+            <div class="tab-pane " id="tab4">
                <div class="row ">
                   <div class="col-md-7">
-                     <h3 class="mt-4" style="color:#000;">Tax Planning and
-                        Preparation</h3>
+                     <h3 class="mt-0" style="color:#000;">
+                        Estate Planning</h3>
                      <div class="row mt-4">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Retirement
-                                 Savings Plans: </span> Want to retire without
-                              financial stress? We help you build a nest egg
-                              that will let you enjoy your golden years.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Wills and Trusts:
+                              </span>
+                              Ensure your legacy is protected. We help you set up wills and trusts that
+                              reflect your wishes and safeguard your assets.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;"> Pension
-                                 Planning:
-                              </span> Navigating pension options can be tricky.
-                              We guide you through the best choices to
-                              ensure a steady income stream in retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">
+                                 Asset Protection:
+                              </span>
+                              Shield your wealth from creditors and legal challenges with our robust
+                              asset protection strategies.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Post-Retirement
-                                 Income
-                                 Planning: </span> Stay financially secure even
-                              after you stop working. We design plans
-                              that keep the money flowing long after
-                              retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Succession Planning:
+                              </span>
+                              Plan for the future of your estate. Our succession planning ensures a
+                              smooth transfer of your assets to the next generation.
+
+                           </p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-5">
-                     <img src="image/serv1.png" alt width="100%">
+                  <div class="col-md-5 mt-md-0 mt-3">
+                     <img src="image/sos31.png" alt width="100%">
                   </div>
-                  <div class="col-md-7 mt-3">
-                     <img src="image/serv2.png" alt width="100%">
+                  <div class="col-md-12 mt-3">
+                     <img src="image/sos32.png" alt width="100%">
                   </div>
-                  <div class="col-md-5 mt-3">
-                     <img src="image/serv3.png" alt width="100%">
-                  </div>
+
                </div>
             </div>
-            <div class="tab-pane" id="tab4">
+            <div class="tab-pane " id="tab5">
                <div class="row ">
                   <div class="col-md-7">
-                     <h3 class="mt-4" style="color:#000;">Estate Planning</h3>
+                     <h3 class="mt-0" style="color:#000;">
+                        Insurance Planning</h3>
                      <div class="row mt-4">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Retirement
-                                 Savings Plans: </span> Want to retire without
-                              financial stress? We help you build a nest egg
-                              that will let you enjoy your golden years.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Health Insurance:
+                              </span>
+                              Health expenses can be unpredictable. We find the best health insurance
+                              plans to cover you and your family.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;"> Pension
-                                 Planning:
-                              </span> Navigating pension options can be tricky.
-                              We guide you through the best choices to
-                              ensure a steady income stream in retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">
+                                 Life Insurance:
+                              </span>
+                              Protect your loved ones with life insurance policies that provide financial
+                              security when it’s needed most.
+                           </p>
                         </div>
                      </div>
                      <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Post-Retirement
-                                 Income
-                                 Planning: </span> Stay financially secure even
-                              after you stop working. We design plans
-                              that keep the money flowing long after
-                              retirement.</p>
+                        <div class="col-md-1 col-1 pr-0 text-center justify-content-center pt-2"><img
+                              src="image/round.png" alt width="25"></div>
+                        <div class="col-md-11 col-11">
+                           <p style="font-size: 16px;">
+                              <span style="font-weight: 700;color:#000;">Vehicle Insurance:
+                              </span>
+                              Drive with confidence. We recommend comprehensive vehicle insurance
+                              to keep you covered on the road.
+
+
+                           </p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-5">
-                     <img src="image/serv1.png" alt width="100%">
+                  <div class="col-md-5 mt-md-0 mt-3">
+                     <img src="image/sos41.png" alt width="100%">
                   </div>
-                  <div class="col-md-7 mt-3">
-                     <img src="image/serv2.png" alt width="100%">
+                  <div class="col-md-12 mt-3">
+                     <img src="image/sos42.png" alt width="100%">
                   </div>
-                  <div class="col-md-5 mt-3">
-                     <img src="image/serv3.png" alt width="100%">
-                  </div>
+
                </div>
             </div>
-            <div class="tab-pane" id="tab5">
-               <div class="row ">
-                  <div class="col-md-7">
-                     <h3 class="mt-4" style="color:#000;"> Insurance
-                        Planning</h3>
-                     <div class="row mt-4">
-                        <div class="col-md-1  pr-0 text-center  justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Retirement
-                                 Savings Plans: </span> Want to retire without
-                              financial stress? We help you build a nest egg
-                              that will let you enjoy your golden years.</p>
-                        </div>
-                     </div>
-                     <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;"> Pension
-                                 Planning:
-                              </span> Navigating pension options can be tricky.
-                              We guide you through the best choices to
-                              ensure a steady income stream in retirement.</p>
-                        </div>
-                     </div>
-                     <div class="row mt-3">
-                        <div class="col-md-1  pr-0 text-center justify-content-center pt-2"><img src="image/round.png"
-                              alt width="25"></div>
-                        <div class="col-md-11">
-                           <p style="font-size: 18px;"><span style="font-weight: 700;color:#000;">Post-Retirement
-                                 Income
-                                 Planning: </span> Stay financially secure even
-                              after you stop working. We design plans
-                              that keep the money flowing long after
-                              retirement.</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-5">
-                     <img src="image/serv1.png" alt width="100%">
-                  </div>
-                  <div class="col-md-7 mt-3">
-                     <img src="image/serv2.png" alt width="100%">
-                  </div>
-                  <div class="col-md-5 mt-3">
-                     <img src="image/serv3.png" alt width="100%">
-                  </div>
-               </div>
-            </div>
+
          </div>
       </div>
    </div>
@@ -433,34 +457,40 @@
          <div class="col-md-4"><img src="image/solu_bus.png" alt width="100%"></div>
          <div class="col-md-8">
             <div class="accordion">
-               <div class="accordion-item" style="position: relative;">
+               <div class="accordion-item mt-0" style="position: relative;">
                   <button class="accordion-header" data-target="content1">
                      <div class="row">
                         <div class="col-md-1 col-2"><img src="image/snicon.png" alt></div>
                         <div class="col-md-11 col-10 align-content-center">
-                           <h3 style="color:#000;font-weight:500;">Creative
-                              design</h3>
-                           <p class="mt-3" style="color:#6C6C72;"><span style="font-weight: 600;">• Financial
-                                 Management:</span> From day-to-day operations to
+                           <h4 style="color:#000;font-weight:500;">Corporate Financial Advisory
+                           </h4>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Financial
+                                 Management:</span>
+                              From day-to-day operations to
                               long-term planning, our financial management
                               services keep your business on track.
                            </p>
                         </div>
-                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;"><i
-                              class="fas fa-chevron-down"></i></div>
+                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;">
+                           <i class="fas fa-chevron-down"></i>
+                        </div>
                      </div>
                   </button>
                   <div class="accordion-content" id="content1">
                      <div class="row">
                         <div class="col-md-1 col-2 "></div>
                         <div class="col-md-11 col-10 pl-0">
-                           <p class="mt-0" style="color:#6C6C72;"><span style="font-weight: 600;">• Mergers and
+                           <p class="mt-0" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Mergers and
                                  Acquisitions:</span>
                               Thinking of expanding? We provide strategic advice
                               and support to navigate M&A activities
-                              smoothly.</p>
+                              smoothly.
+                           </p>
                            <p class="mt-3" style="color:#6C6C72;">
-                              <span style="font-weight: 600;">• Risk Management:</span> Identify and mitigate financial
+                              <span style="font-weight: 600;">• Risk Management:</span>
+                              Identify and mitigate financial
                               risks with our expert guidance, ensuring your
                               business stays resilient.
                            </p>
@@ -475,29 +505,32 @@
                      <div class="row">
                         <div class="col-md-1 col-2"><img src="image/snicon.png" alt></div>
                         <div class="col-md-11 col-10 align-content-center">
-                           <h3 style="color:#000;font-weight:500;">Business Planning and Strategy</h3>
-                           <p class="mt-3" style="color:#6C6C72;"><span style="font-weight: 600;">• Business Plan
-                                 Development:</span> Turn your vision into a solid plan. We help you craft detailed and
+                           <h4 style="color:#000;font-weight:500;">Business Planning and Strategy</h4>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Business Plan
+                                 Development:</span>
+                              Turn your vision into a solid plan. We help you craft detailed and
                               actionable business plans.
                            </p>
                         </div>
-                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;"><i
-                              class="fas fa-chevron-down"></i></div>
+                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;">
+                           <i class="fas fa-chevron-down"></i>
+                        </div>
                      </div>
                   </button>
                   <div class="accordion-content" id="content2">
                      <div class="row">
                         <div class="col-md-1 col-2"></div>
                         <div class="col-md-11 col-10 pl-0">
-                           <p class="mt-0" style="color:#6C6C72;"><span style="font-weight: 600;">• Mergers and
-                                 Acquisitions:</span>
-                              Thinking of expanding? We provide strategic advice
-                              and support to navigate M&A activities
-                              smoothly.</p>
+                           <p class="mt-0" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Financial Forecasting:</span>
+                              Look ahead with confidence. Our financial forecasting services predict
+                              and plan for your future performance.
+                           </p>
                            <p class="mt-3" style="color:#6C6C72;">
-                              <span style="font-weight: 600;">• Risk Management:</span> Identify and mitigate financial
-                              risks with our expert guidance, ensuring your
-                              business stays resilient.
+                              <span style="font-weight: 600;">• Strategic Formulation:</span>
+                              We develop strategies that enhance your profitability and
+                              competitiveness.
                            </p>
                         </div>
                      </div>
@@ -510,29 +543,32 @@
                      <div class="row">
                         <div class="col-md-1 col-2"><img src="image/snicon.png" alt></div>
                         <div class="col-md-11 col-10 align-content-center">
-                           <h3 style="color:#000;font-weight:500;">Tax Compliance and Strategy</h3>
-                           <p class="mt-3" style="color:#6C6C72;"><span style="font-weight: 600;">• Corporate Tax
-                                 Planning:</span> Maximize your business’s tax efficiency. Our corporate tax strategies
+                           <h4 style="color:#000;font-weight:500;">Tax Compliance and Strategy</h4>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Corporate Tax
+                                 Planning:</span>
+                              Maximize your business’s tax efficiency. Our corporate tax strategies
                               help you minimize liabilities and save money.
                            </p>
                         </div>
-                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;"><i
-                              class="fas fa-chevron-down"></i></div>
+                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;">
+                           <i class="fas fa-chevron-down"></i>
+                        </div>
                      </div>
                   </button>
                   <div class="accordion-content" id="content3">
                      <div class="row">
                         <div class="col-md-1 col-2"></div>
                         <div class="col-md-11 col-10 pl-0">
-                           <p class="mt-0" style="color:#6C6C72;"><span style="font-weight: 600;">• Mergers and
-                                 Acquisitions:</span>
-                              Thinking of expanding? We provide strategic advice
-                              and support to navigate M&A activities
-                              smoothly.</p>
+                           <p class="mt-0" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Tax Compliance:</span>
+                              Stay compliant with all tax regulations. We ensure your business meets its
+                              tax obligations without hassle.
+                           </p>
                            <p class="mt-3" style="color:#6C6C72;">
-                              <span style="font-weight: 600;">• Risk Management:</span> Identify and mitigate financial
-                              risks with our expert guidance, ensuring your
-                              business stays resilient.
+                              <span style="font-weight: 600;">• Tax Audits and Disputes:</span>
+                              Facing a tax audit? We provide support and resolution strategies to
+                              handle audits and disputes effectively.
                            </p>
                         </div>
                      </div>
@@ -545,29 +581,70 @@
                      <div class="row">
                         <div class="col-md-1 col-2"><img src="image/snicon.png" alt></div>
                         <div class="col-md-11 col-10 align-content-center">
-                           <h3 style="color:#000;font-weight:500;">Employee Benefits Planning</h3>
-                           <p class="mt-3" style="color:#6C6C72;"><span style="font-weight: 600;">• Health and Wellness
-                                 Programs:</span> Create a healthier workplace. Our health and wellness programs keep
+                           <h4 style="color:#000;font-weight:500;">Employee Benefits Planning</h4>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Health and Wellness
+                                 Programs:</span>
+                              Create a healthier workplace. Our health and wellness programs keep
                               your employees happy and productive.
                            </p>
                         </div>
-                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;"><i
-                              class="fas fa-chevron-down"></i></div>
+                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;">
+                           <i class="fas fa-chevron-down"></i>
+                        </div>
                      </div>
                   </button>
                   <div class="accordion-content" id="content4">
                      <div class="row">
                         <div class="col-md-1 col-2"></div>
                         <div class="col-md-11 col-10 pl-0">
-                           <p class="mt-0" style="color:#6C6C72;"><span style="font-weight: 600;">• Mergers and
-                                 Acquisitions:</span>
-                              Thinking of expanding? We provide strategic advice
-                              and support to navigate M&A activities
-                              smoothly.</p>
+                           <p class="mt-0" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Retirement Plans:</span>
+                              Offer competitive retirement benefits. We set up and manage plans that
+                              help you attract and retain top talent.
+                           </p>
                            <p class="mt-3" style="color:#6C6C72;">
-                              <span style="font-weight: 600;">• Risk Management:</span> Identify and mitigate financial
-                              risks with our expert guidance, ensuring your
-                              business stays resilient.
+                              <span style="font-weight: 600;">• Insurance Benefits:</span>
+                              Provide peace of mind for your team. Our insurance benefits packages
+                              cover health, life, and disability insurance.
+                           </p>
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+               <div class="accordion-item" style="position: relative;">
+                  <button class="accordion-header" data-target="content5">
+                     <div class="row">
+                        <div class="col-md-1 col-2"><img src="image/snicon.png" alt></div>
+                        <div class="col-md-11 col-10 align-content-center">
+                           <h4 style="color:#000;font-weight:500;">Startup Financial Services</h4>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Seed Funding Advice:</span>
+                              Get your startup off the ground. We offer guidance on securing initial
+                              funding to fuel your growth.
+                           </p>
+                        </div>
+                        <div class="" style="    position: absolute; bottom: 10px; right: 30px;">
+                           <i class="fas fa-chevron-down"></i>
+                        </div>
+                     </div>
+                  </button>
+                  <div class="accordion-content" id="content5">
+                     <div class="row">
+                        <div class="col-md-1 col-2"></div>
+                        <div class="col-md-11 col-10 pl-0">
+                           <p class="mt-0" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Financial Management Practices:</span>
+                              Manage your startup’s finances with ease. Our best
+                              practices ensure your finances are in order from day one.
+                           </p>
+                           <p class="mt-3" style="color:#6C6C72;">
+                              <span style="font-weight: 600;">• Growth Strategy Development:</span>
+                              Scale your business effectively. We create growth strategies
+                              that help your startup expand and succeed.
+
                            </p>
                         </div>
                      </div>
@@ -607,8 +684,7 @@
    });
 
    $(document).ready(function () {
-      $('.tab-button').click(function () {
-         // Remove active class from all buttons and panes
+      $('.tab-button').click(function () { // Remove active class from all buttons and panes
          $('.tab-button').removeClass('active');
          $('.tab-pane').removeClass('active');
 
