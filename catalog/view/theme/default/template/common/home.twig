@@ -206,12 +206,23 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
    <div class="row">
       <div class="slider_banner col-12 desktop-banner">
-         <div class="desktop-slider hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
+         <div class="desktop-slider hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style" >
             {% for banner in banners %}
-            <a href="{{ banner.link }}">
+            <a href="{{ banner.link }}"style="position: relative;">
                <img src="{{ banner.image }}" alt class="img-response slider-img">
+               <div class="uuu" style="position: absolute;bottom:0;left:30%">
+                  <div class="card text-center" style="background-color: #F6F6F6;width:700px;    border-radius: 90px;    margin: auto;    border: none;">
+                    
+                     <div class="card-body">
+                        <h4 class="card-title" style="color: #906CD4;font-size:26px;    margin: 0;"><span style="font-weight: 700;color:#692BD8;">I Need</span> Corporate Finance Solutions.</h4>
+                        
+                     </div>
+                  </div>
+                  
+               </div>
             </a>
             {% endfor %}
+            
          </div>
       </div>
       <div class="slider_banner col-12 mobile-banner">
